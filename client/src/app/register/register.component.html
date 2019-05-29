@@ -1,0 +1,27 @@
+<div class="main-div">
+    <mat-card class="center">
+        <mat-card-title>Register</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="registerForm" novalidate>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Enter Email Address" formControlName="email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Enter Password" formControlName="password">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Enter Name" formControlName="name">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput [matDatepicker]="picker" formControlName="date_of_birth" placeholder="Date of birth">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions align="center">
+            <button mat-raised-button type="submit" color="primary" [disabled]="registerForm.invalid" (click)="registerData()">Register</button>
+            <button mat-raised-button type="submit" color="primary" routerLink="/login">Login</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
