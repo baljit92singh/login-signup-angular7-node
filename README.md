@@ -1,4 +1,11 @@
-# login-signup-angular7-node
+## Follows this steps
+1). First clone this project.
+2). On Cmd open client and server path separately.
+3). On Cmd client section you can run commond ng build --watch.
+4). On Cmd server section you can run commond node server.js.
+5). Go to the server folder in that SQL folder are in file present moshi_moshi.sql it imports in your Mysql data database. 
+
+## login-signup-angular7-node
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
 ## Code scaffolding
