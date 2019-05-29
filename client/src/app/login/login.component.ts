@@ -31,7 +31,6 @@ export class LoginComponent implements OnInit {
       email: this.loginForm.controls['email'].value,
       password: this.loginForm.controls['password'].value
     }
-    console.log(item);
     this.commonService.loginUser(item)
       .subscribe(res => {
         if (res.code === 200) {
